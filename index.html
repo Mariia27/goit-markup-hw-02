@@ -4,18 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio v.1</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
       <nav>
-        <a href="./">Web Studio </a>
-        <ul class="site-nav list">
+        <a href="./" class="logo">Web <span>Studio</span></a>
+        <!-- навігація -->
+        <ul class="site-nav">
           <li><a href="./index.html" class="link">Студия</a></li>
           <li><a href="./portfolio.html" class="link">Портфолио</a></li>
           <li><a href="#" class="link">Контакты</a></li>
         </ul>
       </nav>
+      <!-- контакти -->
       <ul class="authorise-nav">
         <li>
           <a href="mailto:info@devstudio.com" class="link"
@@ -26,57 +32,59 @@
       </ul>
     </header>
     <main>
-      <section class="section">
+      <!-- герой -->
+      <section>
         <h1 class="hero">
           ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br />
           ДЛЯ ВАШЕГО БИЗНЕСА
         </h1>
-        <a href="#" class="button">Заказать услугу</a>
+        <button type="button" class="buton-main">Заказать услугу</button>
       </section>
-      <section class="section">
+      <!-- наші переваги -->
+      <section>
         <h2 class="section-tittle">Наши преимущества</h2>
         <ul>
-          <li>
+          <li class="advantages">
             <img src="./css/images/antenna.svg" alt="антена" />
             <h3 class="section-tittle">Внимание к деталям</h3>
-            <p>
+            <p class="text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li>
+          <li class="advantages">
             <img src="./css/images/clock.svg" alt="часы" />
             <h3 class="section-tittle">Пунктуальность</h3>
-            <p>
+            <p class="text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li>
+          <li class="advantages">
             <img src="./css/images/diagram.svg" alt="диагармма" />
             <h3 class="section-tittle">Планирование</h3>
-            <p>
+            <p class="text">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li>
+          <li class="advantages">
             <img src="./css/images/astronaut.svg" alt="астронавт" />
             <h3 class="section-tittle">Современные технологии</h3>
-            <p>
+            <p class="text">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий
             </p>
           </li>
         </ul>
       </section>
-      <section class="section">
+      <!-- чим ми займаємся -->
+      <section>
         <h2 class="section-tittle">Чем мы занимаемся</h2>
-        <ul>
+        <ul class="featchers">
           <li>
             <a href="#">
               <img
-                class=""
                 src="./css/images/notebook.jpg"
                 alt="ноутбук"
                 width="380"
@@ -110,12 +118,13 @@
         </ul>
       </section>
       <section class="section">
+        <!-- наша команда -->
         <h2 class="section-tittle">Наша команда</h2>
-        <ul>
+        <ul class="section-team">
           <li>
             <img src="./css/images/john.jpg" alt="фото Джона" />
-            <h3 class="section-tittle">John Smith</h3>
-            <p>Product Designer</p>
+            <h3 class="section-workers">John Smith</h3>
+            <p class="text">Product Designer</p>
           </li>
           <li><a href="" aria-label="Instagram link"></a></li>
           <li><a href="" aria-label="Twitter link"></a></li>
@@ -123,8 +132,8 @@
           <li><a href="" aria-label="LinkedIn link"></a></li>
           <li>
             <img src="./css/images/marta.jpg" alt="фото Марты" />
-            <h3 class="section-tittle">Marta Stewart</h3>
-            <p>Frontend Developer</p>
+            <h3 class="section-workers">Marta Stewart</h3>
+            <p class="text">Frontend Developer</p>
           </li>
           <li><a href="" aria-label="Instagram link"></a></li>
           <li><a href="" aria-label="Twitter link"></a></li>
@@ -132,8 +141,8 @@
           <li><a href="" aria-label="LinkedIn link"></a></li>
           <li>
             <img src="./css/images/robert.jpg" alt="фото Роберта" />
-            <h3 class="section-tittle">Robert Jakis</h3>
-            <p>Marketing</p>
+            <h3 class="section-workers">Robert Jakis</h3>
+            <p class="text">Marketing</p>
           </li>
           <li><a href="" aria-label="Instagram link"></a></li>
           <li><a href="" aria-label="Twitter link"></a></li>
@@ -141,8 +150,8 @@
           <li><a href="" aria-label="LinkedIn link"></a></li>
           <li>
             <img src="./css/images/martin.jpg" alt="фото Мартина" />
-            <h3 class="section-tittle">Martin Doe</h3>
-            <p>UI Designer</p>
+            <h3 class="section-workers">Martin Doe</h3>
+            <p class="text">UI Designer</p>
           </li>
           <li><a href="" aria-label="Instagram link"></a></li>
           <li><a href="" aria-label="Twitter link"></a></li>
@@ -150,6 +159,7 @@
           <li><a href="" aria-label="LinkedIn link"></a></li>
         </ul>
       </section>
+      <!-- постійні клієнти -->
       <section class="section">
         <h2 class="section-tittle">Постоянные клиенты</h2>
         <ul>
@@ -186,19 +196,23 @@
         </ul>
       </section>
     </main>
-    <footer>
-      <a href="./">Web Studio </a>
+    <footer class="footer">
+      <a href="./" class="logo">Web <span>Studio</span></a>
       <address>г. Киев, пр-т Леси Украинки, 26</address>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="authorise-nav">
+        <li>
+          <a href="mailto:info@devstudio.com" class="link"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
       </ul>
       <h2>ПРИСОЕДИНЯЙТЕСЬ</h2>
       <ul>
         <li><a href="" aria-label="Instagram link"></a></li>
         <li><a href="" aria-label="Twitter link"></a></li>
         <li><a href="" aria-label="Facebook link"></a></li>
-        <li><a href="" aria-label="LinkedIn link"></a></li>
+        <li><a href="" aria-label="LinkedIn link"> </a></li>
       </ul>
     </footer>
   </body>

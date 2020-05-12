@@ -11,19 +11,23 @@
   --hero-text-color: #ffffff;
   --background-button-color: #f5f4fa;
   --main-background-color: #FFFFFF;
-  --footer-background-color: #2f303a;
+  --footer-background-color: #2F303A;
   --heder-background-color:#FFFFFF;
+  --footer-authorise-coor:rgba(255, 255, 255, 0.6)
 }
 a {text-decoration: none;}
+ul{list-style: none;}
 
 body {
     background-color: var(--main-background-color);
     font-family: Roboto, sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.71;
     letter-spacing: 3%;
   }
 .text{
+  font-size: 14px;
+  line-height: 1.71;
   color: var(--primary-text-color);
 }
    .section-tittle {
@@ -32,6 +36,15 @@ body {
    line-height: 1.31;
    text-align: center;
    color: var(--tittle-text-color);
+   }
+   .section-caption{
+     
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 1.14;
+     color: var(--tittle-text-color);
+     
+     text-transform: uppercase;
    }
    .filter{
      color: var(--tittle-text-color);
@@ -88,8 +101,8 @@ span {
   }
     
 .hero {
-  color: var(--hover-link-color);
-  /* замінити колір на білий в хедер і футер */
+  color: var(--hero-text-color);
+  
 }
 .hero {
   font-weight: 900;
@@ -101,29 +114,26 @@ span {
 }
 
 
-
-
 /*  button*/
+/* .button-main{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+} */
 
 .button-main{
   background-color: var(--hover-link-color);
   color: var(--hero-text-color);
-}
-
-}
+  
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  }
 .button-main:hover, 
 .button-main:focus{
     color: var(--hover-link-color);
 }
-/* фільтр портфоліо */
-.filter .button:focus
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.62;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 6%;
-}
+
 .advantages:hover,
 .advantages:focus {
   color: var(--hover-link-color);
@@ -145,7 +155,7 @@ line-height: 1.19;
   color: var(--primary-text-color);
 }
 .section-speech{
-  color: var(--primary-text-color);
+  color: var(--main-background-color);
   font-size: 18px;
   line-height: 1.56;
   text-align: left;
@@ -157,23 +167,58 @@ line-height: 1.19;
   background-color: var(--background-button-color);
   color: var(--tittle-text-color);
 }
+.button-filter{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
 .featchers .products{
-  color: var(--primary-text-color);
-  /* заміфнити на білий */
+  color: var(--hero-text-color);
+  
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-transform: uppercase;
+}
 
-}
-}
-.footer  {
+footer {
  background-color: var(--footer-background-color);
+ }
+  .authorise-nav-footer .link {
+    color: var(--footer-authorise-coor);
+    font-weight: 500;
+    font-size:14px;
+    line-height: 1.14;
+    
+  }
+  .authorise-nav-footer .link:hover,
+  .authorise-nav-footer .link:focus {
+    color: var(--hover-link-color);
+  }
+
+  .logo-footer {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.18;
+  
+  color: var(--hero-text-color);
+}
+.logo-footer:hover, .logo-footer:focus{
+  color: var(--hover-link-color);
+}
+.logo-footer span{
+  color: var(--hero-text-color);
+}
+.invitation {
+  color: var(--hero-text-color);
 }
 address {
   color: var(--primary-text-color)
   font-size: 14px;
+  font-style: normal;
   line-height: 1.66;
-  letter-spacing: 3%;
+  
 }
 /* .portfolio, .section-title{
   color: var(--tittle-text-color);
@@ -194,3 +239,5 @@ Letter Spacing: 6%
   vertical Align: Top
 Letter Spacing: 6%
 }   */
+
+

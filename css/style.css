@@ -213,6 +213,9 @@ footer {
 }
 .invitation {
   color: var(--hero-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
 }
 address {
   color: var(--primary-text-color)

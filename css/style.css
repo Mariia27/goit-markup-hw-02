@@ -215,7 +215,7 @@ footer {
   color: var(--hero-text-color);
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14px;
 }
 address {
   color: var(--primary-text-color)

@@ -121,7 +121,6 @@ span {
 
 /*  button*/
 
-
 .button-main{
   background-color: var(--hover-link-color);
   color: var(--hero-text-color);
@@ -132,10 +131,8 @@ span {
   }
 .button-main:hover, 
 .button-main:focus{
-    color: var(--hover-link-color);
+color: var(--hover-link-color);
 }
-.button-main{
-  align: center;
 
 .advantages:hover,
 .advantages:focus {
@@ -189,7 +186,7 @@ line-height: 1.19;
   font-size: 16px;
   line-height: 1.62;
 }
-.featchers .products{
+.featchers .products {
   color: var(--hero-text-color);
   
   font-weight: 700;

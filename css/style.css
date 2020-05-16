@@ -91,7 +91,10 @@ span {
   color: var(--hover-link-color);
 }
 /*як працює? */
-.site-nav .link:active {
+/* .site-nav .link:active {
+  color: var(--hover-link-color);
+} */
+.link-active {
   color: var(--hover-link-color);
 }
 .authorise-nav .link {
